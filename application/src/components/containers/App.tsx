@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from '../../static/img/logo.svg';
+
+import Bikes from './Bikes';
 import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +21,7 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+      <Bikes/>
     </div>
   );
 }
